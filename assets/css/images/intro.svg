@@ -1,19 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000px" height="500px" viewBox="0 0 1000 500" zoomAndPan="disable" preserveAspectRatio="none">
 
-    <style type="text/css"><![CDATA[
-		line
-		{
-			stroke: rgba(255,255,255,0.8);
-			stroke-width: 1px;
-		}
-    ]]></style>
-#randomize the circle generation
-	<circle cx="960" cy="750" r="1" />
-	<circle cx="1000" cy="500" r="1" />
-	<circle cx="700" cy="1000" r="1" />
-    <circle cx="1400" cy="980" r="1" />
-    <circle cx="720" cy="590" r="1" />
-    <circle cx="1500" cy="800" r="1" />
-	<circle cx="880" cy="730" r="1" />
-	<circle cx="927" cy="703" r="1" />
+  <image href="pic01.jpg" height="1000" width="500" />
 </svg>
