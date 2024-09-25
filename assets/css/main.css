@@ -1,4 +1,5 @@
 @import url(fontawesome-all.min.css);
+@import '../sass/layout/_sidebar.scss';
 
 /*
 	Webpage based on:
@@ -3878,7 +3879,8 @@ input, select, textarea {
 		background-image: url("images/night.png");
 		background-position: top right;
 		background-repeat: no-repeat;
-		background-size: contain
+		background-size: contain;
+		margin-left: _size(sidebar-width);
 	}
 
 		#intro p {
