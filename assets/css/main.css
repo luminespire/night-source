@@ -3876,13 +3876,12 @@ input, select, textarea {
 
 	#intro {
 		position: relative;  /* or absolute, depending on your layout needs */
-		z-index: 10001;  /* Set higher than the sidebar's z-index */
+		z-index: 20001;  /* Set higher than the sidebar's z-index */
 		background-attachment: fixed;
 		background-image: url("images/night.png");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: contain;
-		margin-left: 18em;
 	}
 
 		#intro p {
