@@ -3878,7 +3878,7 @@ input, select, textarea {
 		position: relative;  /* or absolute, depending on your layout needs */
 		background-attachment: fixed;
 		background-image: url("images/night.png");
-		background-position: middle;
+		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
