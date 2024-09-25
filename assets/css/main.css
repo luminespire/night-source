@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import '../sass/layout/_sidebar.scss';
+@import '../sass/libs/_vars.scss';
 
 /*
 	Webpage based on:
