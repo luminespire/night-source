@@ -3880,7 +3880,7 @@ input, select, textarea {
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: contain;
-		margin-left: _size(sidebar-width);
+		margin-left: 18em;
 	}
 
 		#intro p {
