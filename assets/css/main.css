@@ -3024,7 +3024,7 @@ input, select, textarea {
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(49, 36, 80, 0.9);
+				background: rgba(207, 205, 204, 0.9);
 				content: '';
 				display: block;
 				height: 100%;
@@ -3242,7 +3242,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #2d2b29;
+			background-color: #161513;
 		}
 
 		.wrapper.style1-alt {
@@ -3258,11 +3258,11 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #180e19;
+			background-color: #242424;
 		}
 
 		.wrapper.style3-alt {
-			background-color: #340723;
+			background-color: #3b3636;
 		}
 
 		.wrapper.fullscreen {
@@ -3372,7 +3372,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #04010b;
+		background-color: #050110;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
