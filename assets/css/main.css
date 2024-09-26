@@ -2538,7 +2538,7 @@ input, select, textarea {
 			}
 
 				.wrapper.style1 .icon.major:before {
-					color: #181413;
+					color: #0b0908;
 				}
 
 				.wrapper.style1-alt .icon.major:before {
@@ -2554,7 +2554,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #020316;
+					color: #010714;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
@@ -3372,7 +3372,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #1a0d39;
+		background-color: #04010b;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
