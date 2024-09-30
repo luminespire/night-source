@@ -1835,9 +1835,9 @@ input, select, textarea {
 		transition: border-color 0.2s ease;
 		background-color: transparent;
 		border: solid 1px !important;
-		border-color: rgb(255, 255, 255) !important;
+		border-color: rgb(226, 183, 20) !important;
 		border-radius: 3em;
-		color: #ffffff !important;
+		color: #e2b714 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
