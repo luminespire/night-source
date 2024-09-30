@@ -3242,7 +3242,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #1b0c40;
+			background-color: #060115;
 		}
 
 		.wrapper.style1-alt {
@@ -3250,7 +3250,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #242424;
+			background-color: #060115;
 		}
 
 		.wrapper.style2-alt {
@@ -3258,7 +3258,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #1b0c40;
+			background-color: #060115;
 		}
 
 		.wrapper.style3-alt {
@@ -3372,7 +3372,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #050110;
+		background-color: #1f0430;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -3526,7 +3526,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #2c0433;
+		background: #1f0430;
 		cursor: default;
 		height: 100vh;
 		left: 0;
