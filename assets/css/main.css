@@ -1990,8 +1990,8 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		border-radius: 0.25em;
-		border: solid 1px rgba(255, 255, 255, 0.15);
-		background: rgba(255, 255, 255, 0.05);
+		border: solid 1px rgb(226, 183, 20);
+		background: rgba(255, 255, 255, 0);
 		margin: 0 0 2em 0;
 	}
 
@@ -3783,7 +3783,7 @@ input, select, textarea {
 			}
 
 			#sidebar nav a.active {
-				color: #ffffff;
+				color: rgb(226, 183, 20);
 			}
 
 				#sidebar nav a.active:after {
