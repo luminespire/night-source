@@ -174,6 +174,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		color:rgba(255, 255, 255, 0.692)
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -3246,7 +3247,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1-alt {
-			background-color: #1b0c40;
+			background-color: #010101;
 		}
 
 		.wrapper.style2 {
@@ -3372,7 +3373,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #1f0430;
+		background-color: #010101;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -3468,14 +3469,12 @@ input, select, textarea {
 
 	#sidebar + #wrapper {
 		margin-left: 18em;
-		padding-top: 3.5em;
 	}
 
 		@media screen and (max-width: 1280px) {
 
 			#sidebar + #wrapper {
 				margin-left: 0;
-				padding-top: 3.5em;
 			}
 
 		}
@@ -3483,7 +3482,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#sidebar + #wrapper {
-				padding-top: 0;
+				padding-top: 3.5em;
 			}
 
 		}
@@ -3528,12 +3527,6 @@ input, select, textarea {
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
 		background-color: #010101;
-		background-image: url("images/moon_sidebar.png");
-		background-attachment: fixed;
-		background-position: left;
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-size: 15%;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3883,11 +3876,34 @@ input, select, textarea {
 
 	#intro {
 		position: relative; 
+		background-color: #010101;
 		background-attachment: fixed;
 		background-image: url("images/night.png");
 		background-position: 75% 50%;
 		background-repeat: no-repeat;
 		background-size: fill;
+	}
+		@media screen and (max-width: 980px) {
+		#intro {
+			position: relative; 
+			background-color: #010101;
+			background-attachment: fixed;
+			background-image: url("images/night.png");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+	}
+		@media screen and (max-width: 736px) {
+		#intro {
+			position: relative; 
+			background-color: #010101;
+			background-attachment: fixed;
+			background-image: url("images/night.png");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
 	}
 
 		#intro p {
