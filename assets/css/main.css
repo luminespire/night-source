@@ -3251,7 +3251,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #060115;
+			background-color: #010101;
 		}
 
 		.wrapper.style2-alt {
@@ -3879,7 +3879,7 @@ input, select, textarea {
 		background-color: #010101;
 		background-attachment: fixed;
 		background-image: url("images/night.png");
-		background-position: 75% 50%;
+		background-position: 75% 44%;
 		background-repeat: no-repeat;
 		background-size: fill;
 	}
