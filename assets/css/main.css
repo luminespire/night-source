@@ -3025,7 +3025,7 @@ input, select, textarea {
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(207, 205, 204, 0.9);
+				background: rgba(24, 15, 39, 0.9);
 				content: '';
 				display: block;
 				height: 100%;
@@ -3482,7 +3482,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#sidebar + #wrapper {
-				padding-top: 3.5em;
+				margin: 0 auto;
 			}
 
 		}
