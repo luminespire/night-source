@@ -174,7 +174,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
-		color:rgba(255, 255, 255, 0.692)
+		color:rgba(255, 255, 255, 0.692);
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2097,7 +2097,7 @@ input, select, textarea {
 				-moz-transition-delay: 1.5s;
 				-webkit-transition-delay: 1.5s;
 				-ms-transition-delay: 1.5s;
-				transition-delay: 1.5s;
+					transition-delay: 1.5s;
 			}
 
 			.features section:nth-child(11) .icon {
@@ -3875,61 +3875,65 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		position: relative; 
+		position: relative;
 		background-color: #010101;
 		background-attachment: fixed;
 		background-image: url("images/night.png");
-		background-position: 75% 44%;
+		background-position: 70% 37%;
 		background-repeat: no-repeat;
-		background-size: fill;
+		background-size: 50% auto;
+		padding-right: 50%;
 	}
-		@media screen and (max-width: 980px) {
+
+	#intro::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: inherit;
+		z-index: 1;
+	}
+
+	#intro .inner {
+		position: relative;
+		z-index: 2;
+		mix-blend-mode: difference;
+	}
+
+	#intro h1 {
+		color: #e2b714;
+		position: relative;
+		z-index: 2;
+	}
+
+	#intro p {
+		font-size: 1.25em;
+	}
+
+	@media screen and (max-width: 1280px) {
 		#intro {
-			position: relative; 
-			background-color: #010101;
-			background-attachment: fixed;
-			background-image: url("images/night.png");
-			background-repeat: no-repeat;
-			background-size: contain;
-			background-position: center;
+			background-attachment: scroll;
 		}
 	}
-		@media screen and (max-width: 736px) {
+
+	@media screen and (max-width: 980px) {
 		#intro {
-			position: relative; 
-			background-color: #010101;
-			background-attachment: fixed;
-			background-image: url("images/night.png");
-			background-repeat: no-repeat;
-			background-size: contain;
-			background-position: center;
+			background-attachment: scroll;
+		}
+
+		#intro p br {
+			display: none;
 		}
 	}
+
+	@media screen and (max-width: 736px) {
+		#intro {
+			background-attachment: scroll;
+		}
 
 		#intro p {
-			font-size: 1.25em;
+			font-size: 1em;
 		}
-
-			@media screen and (max-width: 980px) {
-
-				#intro p br {
-					display: none;
-				}
-
-			}
-
-			@media screen and (max-width: 736px) {
-
-				#intro p {
-					font-size: 1em;
-				}
-
-			}
-
-		@media screen and (max-width: 1280px) {
-
-			#intro {
-				background-attachment: scroll;
-			}
-
-		}
+	}
