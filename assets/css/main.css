@@ -3206,7 +3206,7 @@ input, select, textarea {
 
 	.wrapper {
 		position: relative;
-		padding: 0 10em 0 10.75em;
+		padding: 0 0 0 10.75em;
 		
 	}
 		@media screen and (max-width: 1680px) {
