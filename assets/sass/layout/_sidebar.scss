@@ -18,7 +18,7 @@
 		text-align: right;
 		top: 0;
 		width: _size(sidebar-width);
-		z-index: _misc(z-index-base);
+		z-index: 3;
 
 		> .inner {
 			@include vendor('display', 'flex');
