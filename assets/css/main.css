@@ -3206,13 +3206,13 @@ input, select, textarea {
 
 	.wrapper {
 		position: relative;
-		padding: 0 15em 0 15em;
+		padding: 0 8em 0 10.75em;
 		
 	}
 		@media screen and (max-width: 1680px) {
 
 				.wrapper {
-					padding: 0 10em 0 10em;
+					padding: 0 8em 0 8em;
 				}
 			
 			}
@@ -3220,6 +3220,13 @@ input, select, textarea {
 
 				.wrapper {
 					padding: 0 5em 0 5em;
+				}
+			
+			}
+		@media screen and (max-width: 736px) {
+
+				.wrapper {
+					padding: 0 1em 0 1em;
 				}
 			
 			}
@@ -3540,12 +3547,11 @@ input, select, textarea {
 	}
 
 /* Sidebar */
-
 	#sidebar {
 		grid-column: 1;
 		grid-row: 1;
 		padding: 2.5em 2.5em 0.5em 2.5em;
-		background-color: #010101;
+		background-color: transparent;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3556,7 +3562,7 @@ input, select, textarea {
 		top: 0;
 		width: auto;
 		z-index: 3;
-		font-size: calc(1em - 0.1vw);
+		font-size: calc(1em - 0.5vh);
 	}
 
 		#sidebar > .inner {
