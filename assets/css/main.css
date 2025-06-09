@@ -3206,17 +3206,33 @@ input, select, textarea {
 
 	.wrapper {
 		position: relative;
+		padding: 0 15em 0 15em;
+		
 	}
+		@media screen and (max-width: 1680px) {
+
+				.wrapper {
+					padding: 0 10em 0 10em;
+				}
+			
+			}
+		@media screen and (max-width: 1280px) {
+
+				.wrapper {
+					padding: 0 5em 0 5em;
+				}
+			
+			}
 
 		.wrapper > .inner {
 			max-width: 100%;
-			width: 50em;
 		}
 
 			@media screen and (max-width: 1680px) {
 
 				.wrapper > .inner {
-					padding: 4em 4em 2em 4em ;
+					padding: 4em 4em 2em 4em;
+					left: 5em;
 				}
 
 			}
@@ -3224,7 +3240,8 @@ input, select, textarea {
 			@media screen and (max-width: 1280px) {
 
 				.wrapper > .inner {
-					width: 100%;
+					padding: 0 0 0 0;
+					left: 0;
 				}
 
 			}
@@ -3233,6 +3250,7 @@ input, select, textarea {
 
 				.wrapper > .inner {
 					padding: 3em 2em 1em 2em ;
+					left: 0;
 				}
 
 			}

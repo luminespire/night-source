@@ -41,16 +41,65 @@
 							
 							<h2>Recommended</h2>
 							<p><i>These are alternatives that I would recommend and consider using. They are competitive in both stats and performance.</i></p>
+							<style>
+								.dropdown {
+									display: flex;
+									justify-content: center;
+									gap: 48px;
+								}
 
-							<a href="#" class="image"><img src="images/dusk.png" alt="" style="max-width: 100%; height: auto; margin: 0 auto;" /></a>
-							<h3><a href="https://altlayouts.com/dusk/index.html">Dusk</a></h3>
-							<p><i>The most popular modern thumb alpha keyboard layout, it is incredible in its stats and performance. It's essentially the Graphite or Gallium of thumb alpha layouts. The main drawback of Dusk is the sorting of the letters (the arragement) on the index. <code>W</code> being placed on the corner just does not make sense as it is rather frequent. Her reasoning was primarily that of the corner + homerow LSBs being more comfortable than center + homerow; I suspect this is due to her using a Piantor. In any case, <code>'</code> being placed above <code>L</code> and <code>M</code> is also not ideal. <code>I'll</code> and <code>I'm</code> are some good examples that suffer from this. In any case, Dusk is an absolutely great layout, but I would personally swap around some keys.</i></p>
-							<hr />
+								.dropdown-item {
+									position: relative;
+									width: fit-content;
+								}
 
-							<a href="#" class="image"><img src="images/racket.png" alt="" style="max-width: 100%; height: auto; margin: 0 auto;" /></a>
-							<h3>Racket</h3>
-							<p><i>A very good layout that favors heavier non-index usage, Racket is a partially inroll focused layout. It utilizes lighter indexs for heavier middle and ring fingers. I personally, accidentally, created and used a layout extremely similar to this called Stern (index keys swapped and <code>V</code> being in the position where F is) up to 160 WPM so I can confirm it certainly works. My only real complaints for this/these (Stern) layouts are that <code>LHM</code> can be a bit heavy movement-wise for some people. The frequency of <code>LL</code> exemplifies this and makes the middle finger jump around quite a bit. Nevertheless, it is usable and certainly competes stats-wise. </i></p>
-							<hr />
+								.dropdown-item img {
+									max-width: 100%;
+									height: auto;
+									margin: 0 auto;
+									transition: transform 0.3s ease;
+								}
+
+								.dropdown-item:hover img {
+									transform: scale(1.05);
+								}
+
+								.description {
+									display: none;
+									position: absolute;
+									top: 100%;
+									left: 50%;
+									transform: translateX(-50%);
+									background-color: rgba(0, 0, 0, 0.8);
+									color: white;
+									padding: 10px;
+									width: 300px;
+									text-align: center;
+									border-radius: 5px;
+									z-index: 1;
+								}
+
+								.dropdown-item:hover .description {
+									display: block;
+								}
+							</style>
+
+							<div class="dropdown">
+								<div class="dropdown-item">
+									<img src="images/dusk.png" alt="" />
+									<div class="description">
+										<h3><a href="https://altlayouts.com/dusk/index.html">Dusk</a></h3>
+										<p><i>The most popular modern thumb alpha keyboard layout, it is incredible in its stats and performance. It's essentially the Graphite or Gallium of thumb alpha layouts. The main drawback of Dusk is the sorting of the letters (the arrangement) on the index. <code>W</code> being placed on the corner just does not make sense as it is rather frequent. Her reasoning was primarily that of the corner + homerow LSBs being more comfortable than center + homerow; I suspect this is due to her using a Piantor. In any case, <code>'</code> being placed above <code>L</code> and <code>M</code> is also not ideal. <code>I'll</code> and <code>I'm</code> are some good examples that suffer from this. In any case, Dusk is an absolutely great layout, but I would personally swap around some keys.</i></p>
+									</div>
+								</div>
+								<div class="dropdown-item">
+									<img src="images/racket.png" alt="" />
+									<div class="description">
+										<h3>Racket</h3>
+										<p><i>A very good layout that favors heavier non-index usage, Racket is a partially inroll focused layout. It utilizes lighter indexes for heavier middle and ring fingers. I personally, accidentally, created and used a layout extremely similar to this called Stern (index keys swapped and <code>V</code> being in the position where F is) up to 160 WPM so I can confirm it certainly works. My only real complaints for this/these (Stern) layouts are that <code>LHM</code> can be a bit heavy movement-wise for some people. The frequency of <code>LL</code> exemplifies this and makes the middle finger jump around quite a bit. Nevertheless, it is usable and certainly competes stats-wise.</i></p>
+									</div>
+								</div>
+							</div>
 
 							<a href="#" class="image"><img src="images/north.png" alt="" style="max-width: 100%; height: auto; margin: 0 auto;" /></a>
 							<h3>North</h3>
