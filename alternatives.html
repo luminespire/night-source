@@ -39,13 +39,15 @@
 							<p>There is no such thing as a perfect layout, period. Every layout has its own pros and cons - Night among them. Thus, it's a good idea to take a look around and see if there're any alternatives that might suit you better.</p>
 							<p><i>I will provide my own opinions on each of the layouts - you can identify them by the italicized text. I will try my best to judge each layout objectively, but I am inherently biased - just keep that in mind.</i></p>
 							
-							<h2>Recommended</h2>
-							<p><i>These are alternatives that I would recommend and consider using. They are competitive in both stats and performance.</i></p>
+							<h2>WIP! (Work In Progress!)</h2>
+							<p><i>This page is still under construction!</i></p>
 							<style>
 								.dropdown {
-									display: flex;
-									justify-content: center;
+									display: grid;
+									grid-template-columns: repeat(2, 1fr);
 									gap: 48px;
+									justify-items: center;
+									margin-bottom: 2em;
 								}
 
 								.dropdown-item {
@@ -57,26 +59,26 @@
 									max-width: 100%;
 									height: auto;
 									margin: 0 auto;
-									transition: transform 0.3s ease;
+									opacity: 0.5;
+									transition: opacity 0.3s ease;
 								}
 
 								.dropdown-item:hover img {
-									transform: scale(1.05);
+									opacity: 1;
 								}
 
 								.description {
 									display: none;
 									position: absolute;
 									top: 100%;
-									left: 50%;
-									transform: translateX(-50%);
+									left: 0;
+									width: 100%;
 									background-color: rgba(0, 0, 0, 0.8);
 									color: white;
 									padding: 10px;
-									width: 300px;
-									text-align: center;
 									border-radius: 5px;
 									z-index: 1;
+									backdrop-filter: blur(5px);
 								}
 
 								.dropdown-item:hover .description {
@@ -116,26 +118,29 @@
 									</div>
 								</div>
 							</div>
-
-							<h2>Not Recommended</h2>
-							<p><i>These are alternatives that I would not recommend. The majority of them have significantly worse stats (to the point of being redundant compared to non-thumb layouts) but may provide useful historical context.</i></p>
-
-							<a href="#" class="image"><img src="images/aptmak.png" alt="" style="max-width: 100%; height: auto; margin: 0 auto;" /></a>
-							<h3><a href="https://xsznix.wordpress.com/2016/05/16/introducing-the-rsthd-layout/">Aptmak</a></h3>
-							<p><i>Created around 2022, Aptmak is likely the most used thumb alpha layout. It shares a very similar design to RSTHD (see below) but reduces SFSs and reorders some keys. Compared to the likes of modern thumb alpha layouts (Yes, 2022 is considered old already), it suffers from much worse stats in both SFBs and SFSs - even the likes of non-thumb layouts have beaten it. However, it does have very respectable inrolls, but there are better alternatives for that as well. I personally would not recommend this.</i></p>
-							<hr />
-
-							<a href="#" class="image"><img src="images/rsthd.png" alt="" style="max-width: 100%; height: auto; margin: 0 auto;" /></a>
-							<h3><a href="https://xsznix.wordpress.com/2016/05/16/introducing-the-rsthd-layout/">RSTHD</a></h3>
-							<p><i>Created around 2016, it was quite ahead of its time. However, being very similar to that of Aptmak, nowadays, it is not very competitive. Compared to Aptmak, while it is not flat worse, it is very nearly so. Thus, I would also not recommend this.</i></p>
-							<hr />
-							
-							<a href="#" class="image"><img src="images/maltron.png" alt="" style="max-width: 100%; height: auto; margin: 0 auto;" /></a>
-							<h3><a href="https://www.maltron.com/the-maltron-letter-layout-advantage.html">Maltron</a></h3>
-							<p><i>One of the oldest layouts as a whole, it is remarkable how good it is - especially considering its inception around 1976-1977 (See <a href="https://www.maltron.com/a-keyboard-to-increase-productivity-and-reduce-postural-stress.html">7. Maltron Operation</a>). It is honestly incredible how good it performs stats-wise - with SFBS and SFSs ironically being better than that of RSTHD and Aptmak. Unfortunately, again, modern thumb layouts have surpassed it and thus is no longer recommended - also, it has rather high redirects.</i></p>
-							<hr />
-						</div>
-					</section>
+							<div class="dropdown">
+								<div class="dropdown-item">
+									<img src="images/aptmak.png" alt="" />
+									<div class="description">
+										<h3><a href="https://xsznix.wordpress.com/2016/05/16/introducing-the-rsthd-layout/">Aptmak</a></h3>
+										<p><i>Created around 2022, Aptmak is likely the most used thumb alpha layout. It shares a very similar design to RSTHD (see below) but reduces SFSs and reorders some keys. Compared to the likes of modern thumb alpha layouts (Yes, 2022 is considered old already), it suffers from much worse stats in both SFBs and SFSs - even the likes of non-thumb layouts have beaten it. However, it does have very respectable inrolls, but there are better alternatives for that as well. I personally would not recommend this.</i></p>
+									</div>
+								</div>
+								<div class="dropdown-item">
+									<img src="images/rsthd.png" alt="" />
+									<div class="description">
+										<h3><a href="https://xsznix.wordpress.com/2016/05/16/introducing-the-rsthd-layout/">RSTHD</a></h3>
+										<p><i>Created around 2016, it was quite ahead of its time. However, being very similar to that of Aptmak, nowadays, it is not very competitive. Compared to Aptmak, while it is not flat worse, it is very nearly so. Thus, I would also not recommend this.</i></p>
+									</div>
+								</div>
+								<div class="dropdown-item">
+									<img src="images/maltron.png" alt="" />
+									<div class="description">
+										<h3><a href="https://www.maltron.com/the-maltron-letter-layout-advantage.html">Maltron</a></h3>
+										<p><i>One of the oldest layouts as a whole, it is remarkable how good it is - especially considering its inception around 1976-1977 (See <a href="https://www.maltron.com/a-keyboard-to-increase-productivity-and-reduce-postural-stress.html">7. Maltron Operation</a>). It is honestly incredible how good it performs stats-wise - with SFBS and SFSs ironically being better than that of RSTHD and Aptmak. Unfortunately, again, modern thumb layouts have surpassed it and thus is no longer recommended - also, it has rather high redirects.</i></p>
+									</div>
+								</div>
+							</div>
 			</div>
 
 		<!-- Footer -->
