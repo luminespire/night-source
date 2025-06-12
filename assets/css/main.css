@@ -3124,8 +3124,9 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.spotlights > section > .image {
-				height: 50vh;
-				min-height: 15em;
+				height: 30vh;
+				min-width: 20em;
+				min-height: 20em;
 			}
 
 			.spotlights > section > .content {
@@ -3209,23 +3210,24 @@ input, select, textarea {
 		padding: 0 10.75em 0 10.75em;
 		
 	}
-		@media screen and (max-width: 1680px) {
-
-				.wrapper {
-					padding: 0 8em 0 8em;
-				}
-			
-			}
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 2000px) {
 
 				.wrapper {
 					padding: 0 5em 0 5em;
 				}
 			
 			}
+		@media screen and (max-width: 1280px) {
+
+				.wrapper {
+					padding: 0 3em 0 3em;
+				}
+			
+			}
 		@media screen and (max-width: 736px) {
 
 				.wrapper {
+					width: 100%;
 					padding: 0 1em 0 1em;
 				}
 			
@@ -3247,7 +3249,7 @@ input, select, textarea {
 			@media screen and (max-width: 1280px) {
 
 				.wrapper > .inner {
-					padding: 0 0 0 0;
+					padding: 1em;
 					left: 0;
 				}
 
@@ -3256,7 +3258,7 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				.wrapper > .inner {
-					padding: 0em 1em 0em 1em ;
+					padding: 1em;
 					left: 0;
 				}
 
@@ -3492,13 +3494,13 @@ input, select, textarea {
 /* Wrapper (main) */
 
 	#sidebar + #wrapper {
-		margin-left: 15em;
+		margin-left: 5em;
 	}
 
 		@media screen and (max-width: 1280px) {
 
 			#sidebar + #wrapper {
-				margin-left: 15em;
+				margin-left: 1em;
 			}
 
 		}
@@ -3506,25 +3508,25 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#sidebar + #wrapper {
-				margin: 15em;
+				margin: 1em;
 			}
 
 		}
 
 	#header + #wrapper > .wrapper > .inner {
-		margin: 0 auto;
+		margin: 1em auto;
 	}
 
 /* Footer */
 
 	#sidebar + #wrapper + #footer {
-		margin-left: 10em;
+		margin-left: 1em;
 	}
 
 		@media screen and (max-width: 1280px) {
 
 			#sidebar + #wrapper + #footer {
-				margin-left: 0;
+				margin-left: 1em;
 			}
 
 		}
@@ -3543,7 +3545,7 @@ input, select, textarea {
 	}
 
 	#header + #wrapper + #footer > .inner {
-		margin: 0 auto;
+		margin: 1em auto;
 	}
 
 /* Sidebar */
