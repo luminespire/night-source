@@ -3050,7 +3050,7 @@ input, select, textarea {
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			width: 50em;
+			width: 40em;
 			-ms-flex: 1;
 		}
 
@@ -3210,6 +3210,28 @@ input, select, textarea {
 		padding: 0 10.75em 0 10.75em;
 		
 	}
+	@media screen and (max-width: 2000px) {
+
+				.wrapper {
+					padding: 0 5em 0 5em;
+				}
+			
+			}
+		@media screen and (max-width: 1280px) {
+
+				.wrapper {
+					padding: 0 3em 0 3em;
+				}
+			
+			}
+		@media screen and (max-width: 736px) {
+
+				.wrapper {
+					width: 100%;
+					padding: 0 1em 0 1em;
+				}
+			
+			}
 
 		.wrapper > .inner {
 			max-width: 100%;
