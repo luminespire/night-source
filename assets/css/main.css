@@ -3518,10 +3518,13 @@ input, select, textarea {
 	}
 
 /* Footer */
+	#footer {
+		z-index: 1;
+		background-color: transparent;
+	}
 
 	#sidebar + #wrapper + #footer {
 		margin-left: 1em;
-		z-index: 1;
 	}
 
 		@media screen and (max-width: 1280px) {
