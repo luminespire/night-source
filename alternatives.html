@@ -37,10 +37,12 @@
 						<div class="inner" style="text-align: center;">
 							<h1 class="major">Alternatives</h1>
 							<p>There is no such thing as a perfect layout, period. Every layout has its own pros and cons - Night among them. Thus, it's a good idea to take a look around and see if there're any alternatives that might suit you better.</p>
-							<p><i>I will provide my own opinions on each of the layouts - you can identify them by the italicized text. I will try my best to judge each layout objectively, but I am inherently biased - just keep that in mind.</i></p>
+							<p><i>I will provide my own opinions on each of the layouts - you can identify them by the italicized text.</i></p>
 							
 							<h2>WIP! (Work In Progress!)</h2>
-							<p><i>This page is still under construction!</i></p>
+							<p>This page is still under construction!</p>
+							<p>Stats are given <i>relative</i> to Night. The more <b style="color: #00ff00;">green</b>, the better. The more <b style="color: #ff0000;">red</b>, the worse.</p>
+							<p>All stats are analyzed through the Monkeyracer corpus using <a href="https://github.com/Apsu/cmini/">cmini</a>.</p>
 							<style>
 								.dropdown {
 									display: grid;
@@ -91,52 +93,119 @@
 									}
 								}
 							</style>
-
+							<hr />
+							<h3>Stat-Chasers</h3>
+							<p><i>Layouts that focus on highest efficiency.</i></p>
 							<div class="dropdown">
 								<div class="dropdown-item">
 									<img src="images/dusk.png" alt="" />
 									<div class="description">
-										<h3><a href="https://altlayouts.com/dusk/index.html">Dusk</a></h3>
-										<p><i>The most popular modern thumb alpha keyboard layout, it is incredible in its stats and performance. It's essentially the Graphite or Gallium of thumb alpha layouts. The main drawback of Dusk is the sorting of the letters (the arrangement) on the index. <code>W</code> being placed on the corner just does not make sense as it is rather frequent. Her reasoning was primarily that of the corner + homerow LSBs being more comfortable than center + homerow; I suspect this is due to her using a Piantor. In any case, <code>'</code> being placed above <code>L</code> and <code>M</code> is also not ideal. <code>I'll</code> and <code>I'm</code> are some good examples that suffer from this. In any case, Dusk is an absolutely great layout, but I would personally swap around some keys.</i></p>
+										<h3><a href="https://github.com/Aorta3698/dusk/tree/main/src">Dusk</a></h3>
+										<p><b style="color: #ff4400;">+0.11%</b> SFB* <b style="color: #a2ff00;">-0.20%</b> SFS</p>
+										<h4>Pros:</h4>
+										<li>Higher rolls (<b>if</b> using right thumb <code>R</code>).</li>
+										<li><i>Lower index usage.</i></li>
+										<h4>Cons:</h4>
+										<li>Worse SFBs.</li>
+										<li><i>Lower index usage.</i></li>
+										<p></p>
+										<p><i>Perhaps the most well known "modern" stat-chasing layout, Dusk is by far the most comparable to Night, and was partially the inspiration for it.</i></p>
+										<p><i>The choice between Night and Dusk essentially comes down to how much index usage is preferred. More, Night, less, Dusk.</i></p>
+										<p><i>*Majority of the additional SFBs are caused by <code>'</code> alone, and thus is slightly less significant.</i></p>
 									</div>
 								</div>
 								<div class="dropdown-item">
 									<img src="images/racket.png" alt="" />
 									<div class="description">
 										<h3>Racket</h3>
-										<p><i>A very good layout that favors heavier non-index usage, Racket is a partially inroll focused layout. It utilizes lighter indexes for heavier middle and ring fingers. I personally, accidentally, created and used a layout extremely similar to this called Stern (index keys swapped and <code>V</code> being in the position where F is) up to 160 WPM so I can confirm it certainly works. My only real complaints for this/these (Stern) layouts are that <code>LHM</code> can be a bit heavy movement-wise for some people. The frequency of <code>LL</code> exemplifies this and makes the middle finger jump around quite a bit. Nevertheless, it is usable and certainly competes stats-wise.</i></p>
-									</div>
-								</div>
-								<div class="dropdown-item">
-									<img src="images/north.png" alt="" />
-									<div class="description">
-										<h3>North</h3>
-										<p><i>Another layout made by me, North is best described as a "balanced" layout. It is not as good as Night in terms of SFBs (nor Dusk, Racket, or any other thumb alpha layouts on the recommended list), but blows every other layout on this list in terms of SFSs. It trades off that SFB for more comfortable key positions (maintaining a low-use bottom row, frequent same-row bigrams, and symmetrical usage). The main downside of North is <code>D_V</code> and <code>L_V</code> which cause semi-frequent middle-curl scissors.</i></p>
-										<p><i>As a side note, you can trade SFSs for a bit better SFBs by swapping <code>'</code> and <code>;</code>, but it is still not as good as Night or Dusk.</i></p>
-									</div>
-								</div>
-								<div class="dropdown-item">
-									<img src="images/bunya.png" alt="" />
-									<div class="description">
-										<h3>Bunya</h3>
-										<p><i>Bunya, another layout by the creator of Racket, is a similar layout to North (developed independently, but prior to North). The major advantge of Bunya over North (and all layouts so far mentioned) is its use of high usage letters on both indexs. This, along with other letter positionings, makes this an overall very comfortable layout to use. Think of this as North, but with more comfort and slightly less efficiency. Again, similar to North, the primary downside is the <code>V</code> curl scissors and worse SFBs compared to Night and Dusk.</i></p>
-										<p><i>A side note for this as well, I would personally swap <code>W</code> and <code>P</code> for the same reason as Dusk.</i></p>
+										<p><b style="color: #15ff00;">-0.06%</b> SFB <b style="color: #ff7b00;">+0.17%</b> SFS</p>
+										<h4>Pros:</h4>
+										<li>About the lowest SFBs you can get.</li>
+										<li>Better finger usage distribution.</li>
+										<h4>Cons:</h4>
+										<li>Rather poor right index-utilization.</li>
+										<li><b>Very</b> heavy left middle finger load.</li>
+										<p></p>
+										<p><i>Among the first thumb <code>R</code> layouts, Racket is around the local minimum for SFBs with a reasonable design and SFS consideration.</i></p>
+										<p><i>Pick this if you dislike index utilization, particularly on the central columns.</i></p>
 									</div>
 								</div>
 							</div>
+								<hr />
+									<div style="text-align: center;">
+									<h3>Comfy-Choices</h3>
+									<p><i>Layouts that focus a bit extra on comfort at the cost of some efficiency.</i></p>
+									</div>
+								<div class="dropdown">
+									<div class="dropdown-item">
+										<img src="images/bunya.png" alt="" />
+										<div class="description">
+											<h3>Bunya</h3>
+											<p><b style="color: #ff5e00;">+0.09%</b> SFB <b style="color: #ff9d00;">+0.06%</b> SFS</p>
+										<h4>Pros:</h4>
+										<li>Low corner and central column usage.</li>
+										<li>Very good finger usage distribution.</li>
+										<h4>Cons:</h4>
+										<li>Low right index utilization.</li>
+										<li>Repeat heavy thumb <code>S</code>.</li>
+										<p></p>
+										<p><i>Designed by the author of Graphite and Gallium, Bunya is the fully uncompromised design of the formers realized.</i></p>
+										<p><i>This is a fantastic pick for any Graphite or Gallium users.</i></p>
+										</div>
+									</div>
+									<div class="dropdown-item">
+										<img src="images/north.png" alt="" />
+										<div class="description">
+										<h3>North</h3>
+										<p><b style="color: #ff4400;">+0.11%</b> SFB <b style="color: #26ff00;">-0.50%</b> SFS</p>
+										<h4>Pros:</h4>
+										<li>Very low corner and central column usage.</li>
+										<li>Very good finger usage distribution.</li>
+										<h4>Cons:</h4>
+										<li>Low-ish right index utilization.</li>
+										<li>Repeat heavy thumb <code>S</code>.</li>
+										<p></p>
+										<p><i>This is essentially a re-tuned version of Bunya. It performs better statistically at the cost of less similarity to Graphite and Gallium.</i></p>
+										<p><i>A good pick if you like Graphite and Gallium but want it slightly more stats-tuned.</i></p>
+										</div>
+									</div>
+								</div>
+							<div style="text-align: center;">
+							<h3>Inrollin'</h3>
+							<p><i>Layouts that optimize for a lot of inrolls.</i></p>
+								</div>
 							<div class="dropdown">
 								<div class="dropdown-item">
 									<img src="images/aptmak.png" alt="" />
 									<div class="description">
-										<h3><a href="https://xsznix.wordpress.com/2016/05/16/introducing-the-rsthd-layout/">Aptmak</a></h3>
-										<p><i>Created around 2022, Aptmak is likely the most used thumb alpha layout. It shares a very similar design to RSTHD (see below) but reduces SFSs and reorders some keys. Compared to the likes of modern thumb alpha layouts (Yes, 2022 is considered old already), it suffers from much worse stats in both SFBs and SFSs - even the likes of non-thumb layouts have beaten it. However, it does have very respectable inrolls, but there are better alternatives for that as well. I personally would not recommend this.</i></p>
+										<h3>APTMAK</h3>
+										<p><b style="color: #ff0000;">+0.60%</b> SFB <b style="color: #ff0000;">+1.47%</b> SFS</p>
+										<h4>Pros:</h4>
+										<li>Very low corner and central column usage.</li>
+										<li>Very good finger usage distribution.</li>
+										<li>Good amount of inrolls.</li>
+										<h4>Cons:</h4>
+										<li>High SFB and SFS.</li>
+										<li>Very repeat heavy thumb <code>E</code>.</li>
+										<p></p>
+										<p><i>Historically popular and created by the author of APT, APTMAK is a thumb alpha variant of APT.</i></p>
+										<p><i>It has a fantastic finger usage distribution, and is a perfect conversion for existing APT users.</i></p>
 									</div>
 								</div>
 								<div class="dropdown-item">
 									<img src="images/rsthd.png" alt="" />
 									<div class="description">
-										<h3><a href="https://xsznix.wordpress.com/2016/05/16/introducing-the-rsthd-layout/">RSTHD</a></h3>
-										<p><i>Created around 2016, it was quite ahead of its time. However, being very similar to that of Aptmak, nowadays, it is not very competitive. Compared to Aptmak, while it is not flat worse, it is very nearly so. Thus, I would also not recommend this.</i></p>
+										<h3><a href="https://simn.me/rsthd/">RSTHD</a></h3>
+										<p><b style="color: #ff0000;">+0.48%</b> SFB <b style="color: #ff0000;">+1.82%</b> SFS</p>
+										<h4>Pros:</h4>
+										<li>Very good finger usage distribution.</li>
+										<li>Good amount of inrolls.</li>
+										<h4>Cons:</h4>
+										<li>High SFB and SFS.</li>
+										<li>Very repeat heavy thumb <code>E</code>.</li>
+										<p></p>
+										<p><i>Historically popular and created by the author of APT, APTMAK is a thumb alpha variant of APT.</i></p>
+										<p><i>It has a fantastic finger usage distribution, and is a perfect conversion for existing APT users.</i></p>
 									</div>
 								</div>
 								<div class="dropdown-item">
@@ -147,7 +216,7 @@
 									</div>
 								</div>
 							</div>
-			</div>
+						</div>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper style1-alt">
@@ -169,3 +238,4 @@
 
 	</body>
 </html>
+
