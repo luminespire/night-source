@@ -1,8 +1,10 @@
 name: Sync to Homepage
 
+on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
