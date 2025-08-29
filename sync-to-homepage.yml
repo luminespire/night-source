@@ -23,7 +23,7 @@ jobs:
       - name: Sync files
         run: |
           mkdir -p main-site/night
-          rsync -av --delete night-repo/ main-site/night/
+          rsync -av --delete --exclude='.git' night-repo/ main-site/night/
           
       - name: Commit and Push changes
         run: |
