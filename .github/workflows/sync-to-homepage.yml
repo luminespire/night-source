@@ -1,0 +1,39 @@
+name: Sync to Homepage
+
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout night repo
+        uses: actions/checkout@v4
+        with:
+          path: night-repo
+
+      - name: Checkout main site repo
+        uses: actions/checkout@v4
+        with:
+          repository: luminespire/luminespire.github.io
+          token: ${{ secrets.ACCESS_TOKEN }}
+          path: main-site
+
+      - name: Sync files
+        run: |
+          mkdir -p main-site/night
+          rsync -av --delete --exclude='.git' night-repo/ main-site/night/
+          
+      - name: Commit and Push changes
+        run: |
+          cd main-site
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git add .
+          git commit -m "Automated sync from night repository"
+          git push
