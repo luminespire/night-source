@@ -18,7 +18,7 @@ jobs:
       - name: Checkout main site repo
         uses: actions/checkout@v4
         with:
-          repository: luminespire/valorance-homepage
+          repository: luminespire/valorance-website
           token: ${{ secrets.ACCESS_TOKEN }}
           path: main-site
 
