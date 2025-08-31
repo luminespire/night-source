@@ -187,4 +187,12 @@
 				}
 			});
 
+			$('#two .tabs button').on('click', function() {
+ 				var index = $(this).index();
+  				$('#two .tabs button').removeClass('active');
+  				$(this).addClass('active');
+ 		 		$('#two .spotlights > section').hide();
+			  $('#two .spotlights > section').eq(index).show();
+			});
+
 })(jQuery);
