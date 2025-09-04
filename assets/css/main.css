@@ -4021,3 +4021,60 @@ input, select, textarea {
 			grid-template-columns: 1fr;
 		}
 	}
+
+/* Q&A Section */
+
+	.qna {
+		margin: 1em 0;
+		text-align: left;
+	}
+
+	.qna > p:first-child {
+		cursor: pointer;
+		color: inherit;
+	}
+
+	.qna > p:nth-child(n+2) {
+		display: none;
+	}
+
+	.qna > p:first-child:hover,
+	.qna > p:first-child:hover ~ .qna > p:first-child {
+		color: #e2b714;
+	}
+
+	.qna:hover > p:nth-child(2),
+	.qna:hover > .qna-images {
+		display: block;
+	}
+
+	.qna:hover > .qna-images {
+		display: flex;
+	}
+
+	.qna-images {
+		display: none; /* Initially hidden, controlled by JS */
+		flex-direction: column;
+		align-items: center;
+		width: auto;
+	}
+
+	.qna-images img {
+		max-width: 100%;
+		margin: 0.5em 0;
+		vertical-align: top;
+	}
+
+	.qna-images > p {
+		text-align: center;
+		margin: 1em 0;
+		color: #e2b714;
+		font-weight: bold;
+	}
+
+	.qna-images > p {
+		text-align: center;
+		margin: 1em 0;
+		color: #e2b714;
+		font-weight: bold;
+	}

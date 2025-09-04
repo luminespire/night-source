@@ -195,4 +195,24 @@
 			  $('#two .spotlights > section').eq(index).show();
 			});
 
+		// Toggle button functionality
+			$(document).ready(function() {
+				var detailedView = true; // Start with basic view
+				$(".detailed-content").hide(); // Hide detailed content initially
+				$(".basic-content").show(); // Show basic content initially
+				$("#toggleButton").click(function() {
+					detailedView = !detailedView;
+					if (detailedView) {
+						$(this).text("Basic");
+						$(".basic-content").show();
+						$(".detailed-content").hide();
+					} else {
+						$(this).text("Detailed");
+						$(".detailed-content").show();
+						$(".basic-content").hide();
+					}
+				});
+			});
+
+
 })(jQuery);
