@@ -72,6 +72,148 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+/* Q&A Section */
+
+.qna {
+	margin: 1em 0;
+	text-align: left;
+}
+
+.qna > p:first-child {
+	cursor: pointer;
+	color: inherit;
+}
+
+.qna > p:nth-child(n+2) {
+	display: none;
+}
+
+.qna > p:first-child:hover,
+.qna > p:first-child:hover ~ .qna > p:first-child {
+	color: #e2b714;
+}
+
+.qna:hover > p:nth-child(2),
+.qna:hover > .qna-images {
+	display: block;
+}
+
+.qna:hover > .qna-images {
+	display: flex;
+}
+
+.qna-images {
+	display: none; /* Initially hidden, controlled by JS */
+	flex-direction: column;
+	align-items: center;
+	width: auto;
+}
+
+.qna-images img {
+	max-width: 100%;
+	margin: 0.5em 0;
+}
+
+.qna-images > p {
+	text-align: center;
+	margin: 1em 0;
+	color: #e2b714;
+	font-weight: bold;
+}
+
+.qna-images > p {
+	text-align: center;
+	margin: 1em 0;
+	color: #e2b714;
+	font-weight: bold;
+}
+
+.subtitle {
+	font-style: italic;
+	margin-top: -2em;
+}
+
+/* design.html specific styles */
+.text-center {
+	text-align: center;
+}
+
+.design-image {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.design-hr {
+	width: 80%;
+	margin: 2em auto;
+}
+
+.toggle-button {
+	padding: 0 20%;
+	margin-bottom: 5em;
+	font-size: 0.6em;
+}
+
+.design-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.design-section-text {
+	flex: 1;
+}
+
+.design-section-text p {
+	font-size: 0.8em;
+	text-align: left;
+}
+
+.design-section-image {
+	flex: 1;
+}
+
+.design-section-image img {
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* credits.html specific styles */
+.credits-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2em;
+	margin: 2em 0;
+}
+
+.person-card {
+	text-align: center;
+	padding: 1em;
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 10px;
+}
+
+.person-card img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 15%;
+}
+
+/* statistics.html specific styles */
+.stats-image {
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+/* index.html specific styles */
+.main-title {
+	z-index: 2;
+	position: relative;
+}
 
 /* Basic */
 
@@ -4011,60 +4153,4 @@ input, select, textarea {
 		.dropdown {
 			grid-template-columns: 1fr;
 		}
-	}
-
-/* Q&A Section */
-
-	.qna {
-		margin: 1em 0;
-		text-align: left;
-	}
-
-	.qna > p:first-child {
-		cursor: pointer;
-		color: inherit;
-	}
-
-	.qna > p:nth-child(n+2) {
-		display: none;
-	}
-
-	.qna > p:first-child:hover,
-	.qna > p:first-child:hover ~ .qna > p:first-child {
-		color: #e2b714;
-	}
-
-	.qna:hover > p:nth-child(2),
-	.qna:hover > .qna-images {
-		display: block;
-	}
-
-	.qna:hover > .qna-images {
-		display: flex;
-	}
-
-	.qna-images {
-		display: none; /* Initially hidden, controlled by JS */
-		flex-direction: column;
-		align-items: center;
-		width: auto;
-	}
-
-	.qna-images img {
-		max-width: 100%;
-		margin: 0.5em 0;
-	}
-
-	.qna-images > p {
-		text-align: center;
-		margin: 1em 0;
-		color: #e2b714;
-		font-weight: bold;
-	}
-
-	.qna-images > p {
-		text-align: center;
-		margin: 1em 0;
-		color: #e2b714;
-		font-weight: bold;
 	}

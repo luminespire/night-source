@@ -37,7 +37,7 @@
 					<section id="main" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h1 class="major">Terminology</h1>
-							<p style="font-style: italic; margin-top: -2em;">All examples are in the QWERTY layout.</p>
+							<p class="subtitle">All examples are in the QWERTY layout.</p>
 							<h4 id="sfb">SFB</h4>
 							<p>Stands for <b>S</b>ame <b>F</b>inger <b>B</b>igram. Describes when the same finger is used to press two keys consecutively. <code>Example: ED</code></p>
 							<hr />
@@ -109,29 +109,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-				// Scroll to element with offset
-				function scrollToElement(elementId) {
-					var element = document.getElementById(elementId);
-					var offset = window.innerHeight / 2;
-					var elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-					var offsetPosition = elementPosition - offset + (element.offsetHeight / 2);
-
-					window.scrollTo({
-						top: offsetPosition,
-						behavior: "smooth"
-					});
-				}
-
-				// Bind click events to side indicator links
-				document.querySelectorAll('#side-indicator a').forEach(anchor => {
-					anchor.addEventListener('click', function(e) {
-						e.preventDefault();
-						var targetId = this.getAttribute('href').substring(1);
-						scrollToElement(targetId);
-					});
-				});
-			</script>
-
+			
 	</body>
 </html>

@@ -195,24 +195,48 @@
 			  $('#two .spotlights > section').eq(index).show();
 			});
 
-		// Toggle button functionality
-			$(document).ready(function() {
-				var detailedView = true; // Start with basic view
-				$(".detailed-content").hide(); // Hide detailed content initially
-				$(".basic-content").show(); // Show basic content initially
-				$("#toggleButton").click(function() {
-					detailedView = !detailedView;
-					if (detailedView) {
-						$(this).text("Basic");
-						$(".basic-content").show();
-						$(".detailed-content").hide();
-					} else {
-						$(this).text("Detailed");
-						$(".detailed-content").show();
-						$(".basic-content").hide();
-					}
-				});
-			});
+	// Toggle button functionality for design.html
+	if ($("#toggleButton").length) {
+		var detailedView = true; // Start with basic view
+		$(".detailed-content").hide(); // Hide detailed content initially
+		$(".basic-content").show(); // Show basic content initially
+		$("#toggleButton").click(function() {
+			detailedView = !detailedView;
+			if (detailedView) {
+				$(this).text("Basic");
+				$(".basic-content").show();
+				$(".detailed-content").hide();
+			} else {
+				$(this).text("Detailed");
+				$(".detailed-content").show();
+				$(".basic-content").hide();
+			}
+		});
+	}
 
+	// Scroll to element with offset for terminology.html
+	if ($('#side-indicator').length) {
+		// Scroll to element with offset
+		function scrollToElement(elementId) {
+			var element = document.getElementById(elementId);
+			var offset = window.innerHeight / 2;
+			var elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+			var offsetPosition = elementPosition - offset + (element.offsetHeight / 2);
+
+			window.scrollTo({
+				top: offsetPosition,
+				behavior: "smooth"
+			});
+		}
+
+		// Bind click events to side indicator links
+		document.querySelectorAll('#side-indicator a').forEach(anchor => {
+			anchor.addEventListener('click', function(e) {
+				e.preventDefault();
+				var targetId = this.getAttribute('href').substring(1);
+				scrollToElement(targetId);
+			});
+		});
+	}
 
 })(jQuery);
