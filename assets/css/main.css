@@ -163,6 +163,11 @@ input, select, textarea {
 			color: #ffffff;
 		}
 
+	a.image {
+		border-bottom: none !important;
+		text-decoration: none !important;
+	}
+
 	strong, b {
 		color: #ffffff;
 		font-weight: bold;
@@ -2565,14 +2570,11 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 0.25em;
-		border: 0;
 		display: inline-block;
 		position: relative;
 	}
 
 		.image img {
-			border-radius: 0.25em;
 			display: block;
 		}
 
@@ -3009,7 +3011,6 @@ input, select, textarea {
 		.spotlights > section > .image {
 			background-position: center center;
 			background-size: cover;
-			border-radius: 0;
 			display: block;
 			flex-shrink: 0;
 			width: 35%;
