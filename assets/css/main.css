@@ -181,6 +181,10 @@ input, select, textarea {
 	margin-right: auto;
 }
 
+/* variations.html specific styles */
+.layout-content {
+	margin-bottom: 2em;
+}
 /* credits.html specific styles */
 .credits-grid {
 	display: grid;
@@ -208,6 +212,31 @@ input, select, textarea {
 	max-width: 100%;
 	height: auto;
 	margin: 0 auto;
+}
+
+/* blog.html specific styles */
+.image-fullscreen {
+	display: block;
+	width: 75vw;
+	height: 75vh;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.image-fullscreen img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+/* blog.html specific styles */
+@media screen and (min-width: 1280px) {
+	body:has(#introduction) .wrapper {
+		margin-left: 10em;
+	}
 }
 /* index.html specific styles */
 .main-title {

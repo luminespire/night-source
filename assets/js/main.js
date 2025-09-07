@@ -195,23 +195,36 @@
 			  $('#two .spotlights > section').eq(index).show();
 			});
 
-	// Toggle button functionality for design.html
+	// Toggle button functionality
 	if ($("#toggleButton").length) {
-		var detailedView = true; // Start with basic view
-		$(".detailed-content").hide(); // Hide detailed content initially
-		$(".basic-content").show(); // Show basic content initially
-		$("#toggleButton").click(function() {
-			detailedView = !detailedView;
-			if (detailedView) {
-				$(this).text("Basic");
-				$(".basic-content").show();
-				$(".detailed-content").hide();
-			} else {
-				$(this).text("Detailed");
-				$(".detailed-content").show();
-				$(".basic-content").hide();
-			}
-		});
+		// design.html toggle
+		if ($('body').find('.basic-content').length > 0) {
+			var detailedView = true; // Start with basic view
+			$(".detailed-content").hide(); // Hide detailed content initially
+			$(".basic-content").show(); // Show basic content initially
+			$("#toggleButton").click(function() {
+				detailedView = !detailedView;
+				if (detailedView) {
+					$(this).text("Basic");
+					$(".basic-content").show();
+					$(".detailed-content").hide();
+				} else {
+					$(this).text("Detailed");
+					$(".detailed-content").show();
+					$(".basic-content").hide();
+				}
+			});
+		}
+		// variations.html toggle
+		else if ($('body').find('#layout-container').length > 0) {
+			var layouts = $('.layout-content');
+			var currentIndex = 0;
+			$("#toggleButton").click(function() {
+				layouts.eq(currentIndex).hide();
+				currentIndex = (currentIndex + 1) % layouts.length;
+				layouts.eq(currentIndex).show();
+			});
+		}
 	}
 
 	// Scroll to element with offset for terminology.html
