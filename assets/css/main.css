@@ -4141,6 +4141,13 @@ input, select, textarea {
 		margin-bottom: 2em;
 	}
 
+	.dropdown-centered {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		justify-items: center;
+		margin-bottom: 2em;
+	}
+
 	.dropdown-item {
 		position: relative;
 		width: fit-content;
