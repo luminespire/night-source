@@ -1,2 +1,2 @@
 ### Night - A thumb alpha keyboard layout. 
-Repository for [Night](https://www.valorance.net/night/)
+Repository for [Night](https://valorance.net/night/)
